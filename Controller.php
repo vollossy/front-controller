@@ -20,6 +20,11 @@ class Controller
     protected $currentActionFunction = '';
 
     /**
+     * @var string Путь до папки с представлениями.
+     */
+    protected $viewsDir;
+
+    /**
      * Инициализирует работу приложения
      */
     public static function run()
@@ -80,7 +85,7 @@ class Controller
     protected function render($viewName, /** @noinspection PhpUnusedParameterInspection */
                               $data = array()){
         /** @noinspection PhpIncludeInspection */
-        require_once "views/{$viewName}.php";
+        require_once $this->viewsDir.DIRECTORY_SEPARATOR."{$viewName}.php";
     }
 
 }
