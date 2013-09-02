@@ -7,5 +7,9 @@
             "name": "Roman Makarov",
             "email": "vollossy@gmail.com"
         }
-    ]
+    ],
+    "autoload":{
+        "psr-0": { "vollossy\\FrontController\\": "" }
+    },
+    "target-dir": "vollossy/FrontController/"
 }
