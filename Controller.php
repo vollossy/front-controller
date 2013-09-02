@@ -21,8 +21,15 @@ class Controller
 
     public static function run()
     {
-        $instance = new Controller();
+        $className =    static::getClassName();
+
+        $instance = new $className;
         $instance->executeAction(new Request);
+    }
+
+    protected static function getClassName(){
+        $className = __CLASS__;
+        return $className;
     }
 
     /**
