@@ -1,0 +1,11 @@
+{
+    "name": "vollossy/FrontController",
+    "description": "Simple Front Controller realisation",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Roman Makarov aka vollossy",
+            "email": "vollossy@gmail.com"
+        }
+    ]
+}
