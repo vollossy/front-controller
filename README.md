@@ -1,9 +1,10 @@
 front-controller
 ================
 
-Simple front-controller realisation
+Простая реализация шаблона Front Controller
 
-#Installation
-Just install it via composer and use it in index.php file: 
-`use test4news\Controller;
-Controller::run();`
+#Установка
+
+Устанавливается через composer.
+Для использования нужно создать наследника от класса vollossy\FrontController\Controller, в котором переопределить
+метод getClassName, а после вызвать метод run() в index.php

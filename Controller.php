@@ -19,14 +19,23 @@ class Controller
      */
     protected $currentActionFunction = '';
 
+    /**
+     * Инициализирует работу приложения
+     */
     public static function run()
     {
         $className =    static::getClassName();
 
+        /**
+         * @var $instance Controller
+         */
         $instance = new $className;
         $instance->executeAction(new Request);
     }
 
+    /**
+     * @return string Возвращает имя класса(нужно для реализации наследования от данного класса)
+     */
     protected static function getClassName(){
         $className = __CLASS__;
         return $className;
