@@ -1,5 +1,6 @@
 <?php
 namespace vollossy\FrontController;
+use vollossy\FrontController\Exceptions\UnknownRequestPropertyException;
 
 /**
  * Class Controller
