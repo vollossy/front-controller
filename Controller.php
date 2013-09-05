@@ -7,7 +7,7 @@ use vollossy\FrontController\Exceptions\UnknownRequestPropertyException;
  * Класс-контроллер выполняющий всю работу по поиску и выполнению действий внутри приложения
  * @package vollossy\FrontController
  */
-class Controller
+abstract class Controller
 {
     /**
      * @var string Действие, которое должно производиться по умолчанию
